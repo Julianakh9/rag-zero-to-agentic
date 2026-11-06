@@ -21,6 +21,18 @@
         "RAG_ROLE": "employee",
         "RAG_CORPUS": "cvs"
       }
+    },
+    "cv-chatbot": {
+      "type": "stdio",
+      "command": ".venv/bin/python",
+      "args": [
+        "challenge/mcp_server.py"
+      ],
+      "env": {
+        "HF_HUB_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1",
+        "CV_DIR": "data/cvs/candidates"
+      }
     }
   }
 }
